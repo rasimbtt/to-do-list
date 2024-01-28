@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+    border: 2px solid rgb(0, 47, 255);
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+    width: 400px;
+    position: relative;
+}
+
+ul {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.contanier {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    color: white;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    border: 2px solid greenyellow;
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 6px;
+    width: 300px;
+    color: rgb(0, 217, 255);
+    font-family: sans-serif;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgb(0, 217, 255);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input:focus {
+    border: 2px solid rgb(255, 0, 0);
+}
+
+button {
+    border: 2px solid rgb(0, 255, 0);
+    background-color: transparent;
+    padding: 10px 15px;
+    border-radius: 6px;
+    width: 100px;
+    color: rgb(0, 255, 0);
+    font-family: sans-serif;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.fa-check {
+    color: greenyellow;
+    cursor: pointer;
+}
+
+.fa-xmark {
+    color: red;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    color: blue;
+    text-shadow: 2px 2px 2px red;
+}
+
+.fa-pen {
+    color: yellow;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.NewInput {
+    position: absolute;
+    right: -170px;
+    padding: 5px;
+    color: azure;
+    border: 2px solid white;
+    width: 150px;
+}
+
+.contaCount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.counttodo {
+    border: 2px solid rgb(0, 119, 255);
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 6px;
+    color: rgb(0, 119, 255);
+    font-family: sans-serif;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.CheckCount {
+    border: 2px solid rgb(0, 255, 0);
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 6px;
+    color: rgb(0, 255, 0);
+    font-family: sans-serif;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+
+
+
+@media(max-width:430px) {
+    input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    input::placeholder {
+        text-align: center;
+    }
+
+    li {
+        width: 80vw;
+    }
+
+    .NewInput {
+        position: absolute;
+        margin-top: 70px;
+        right: 0px;
+        background-color: brown;
+    }
+
+}
